@@ -1,1 +1,7 @@
-Mini Project 3!
+## Mini Project 3!
+
+To build run ```make build```
+Then set the board in bootloader mode and run ```make prog```
+
+To run test bench file, run:
+```iverilog -g2012 -o GOL_tb.vvp GOL_tb.sv top.sv game_of_life.sv memory.sv ws2812b.sv controller.sv && vvp GOL_tb.vvp > sim.log && gtkwave gol.vcd```
